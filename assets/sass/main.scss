@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80%;
+    margin: 5% auto;
+    text-align: block;
+    font-size: 1.2rem;
+    h1 {
+        margin: 1rem 0 2rem 0;
+    }
+    h4 {
+        font-size: 1.2rem;
+        @media (min-width: 900px)  {
+            font-size: 1.5rem;
+        }
+    }
+    h5, h4 {
+        line-height: normal;
+    }
+    fieldset {        
+        background: rgb(80, 71, 71);
+        border: none;
+        box-shadow: 3px 3px 3px maroon;
+        border-radius: 5px;
+        color: rgb(216, 205, 205);
+        padding: 10%;
+        line-height: 2.2rem;
+
+        input[type=text] {
+            width: 70%; 
+            font-size: 1rem;          
+            margin-bottom: 5%;;
+            padding: 2%;
+            border-radius: 5px;
+            background: rgb(181, 186, 194);
+            &:focus, &:active {
+                background: rgb(190, 204, 223);
+                
+            }
+        }
+
+        button {
+            width: 40%;
+            font-size: 1.2rem;
+            padding: 1%;
+            margin: 3% 0;
+            background-color: rgb(97, 91, 91);
+            color: #fff;
+            border: .5px;
+            box-shadow: 2px 2px 2px rgb(114, 136, 114);
+            border-radius: 6%;
+
+            &:hover, &:active {
+                background-color: lightslategray;
+            }
+        }
+        
+
+        
+    }
+} 
+
+.output {
+    display: flex;
+    justify-content: space-evenly;
+    width: 92%;
+    @media (min-width: 900px) {
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+}

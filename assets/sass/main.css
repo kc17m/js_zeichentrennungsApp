@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  width: 80%;
+  margin: 5% auto;
+  text-align: block;
+  font-size: 1.2rem;
+}
+main h1 {
+  margin: 1rem 0 2rem 0;
+}
+main h4 {
+  font-size: 1.2rem;
+}
+@media (min-width: 900px) {
+  main h4 {
+    font-size: 1.5rem;
+  }
+}
+main h5, main h4 {
+  line-height: normal;
+}
+main fieldset {
+  background: #504747;
+  border: none;
+  box-shadow: 3px 3px 3px maroon;
+  border-radius: 5px;
+  color: #d8cdcd;
+  padding: 10%;
+  line-height: 2.2rem;
+}
+main fieldset input[type=text] {
+  width: 70%;
+  font-size: 1rem;
+  margin-bottom: 5%;
+  padding: 2%;
+  border-radius: 5px;
+  background: #b5bac2;
+}
+main fieldset input[type=text]:focus, main fieldset input[type=text]:active {
+  background: #beccdf;
+}
+main fieldset button {
+  width: 40%;
+  font-size: 1.2rem;
+  padding: 1%;
+  margin: 3% 0;
+  background-color: #615b5b;
+  color: #fff;
+  border: 0.5px;
+  box-shadow: 2px 2px 2px #728872;
+  border-radius: 6%;
+}
+main fieldset button:hover, main fieldset button:active {
+  background-color: lightslategray;
+}
+
+.output {
+  display: flex;
+  justify-content: space-evenly;
+  width: 92%;
+}
+@media (min-width: 900px) {
+  .output {
+    font-size: 2rem;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=main.css.map */

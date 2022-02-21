@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/main.css">
+    <title>js Zeichentrennungs-App</title>
+</head>
+
+<body>
+    <main>
+
+        <fieldset>
+            <h2>App ✂️<h2>
+                    <h1>Trennung von Zeichenketten</h1>
+                    <form action="" onsubmit="return false">
+
+                        <label for="sepString">
+                            <h3>Zu trennende Zeichenkette:</h3>
+                        </label>
+
+                        <input type="text" name="sepString" id="sepString">
+
+                        <label for="sepPosition">
+                            <h3>Zeichenkette für die Trennungsposition:</h3>
+                        </label>
+
+                        <input type="text" name="sepPosition" id="sepPosition">
+                        <br>
+                        <input type="radio" name="sep" id="sepBefore" checked>
+                        <label for="sepBefore">davor trennen</label>
+                        <br>
+                        <input type="radio" name="sep" id="sepAfter">
+                        <label for="sepAfter">danach trennen</label>
+                        <br>
+                        <button type="button" name="separate" onclick="separ()" id="separate">Trennen</button>
+
+                        <h1>Ausgabe</h1>
+                        <div class="output">
+                            <div>
+                                <h4>Vorderer Teil:</h4>
+                                <h5 id="output_before"></h5>
+                            </div>
+                            <div>
+                                <h4>Hinterer Teil:</h4>
+                                <h5 id="output_after"></h5>
+                            </div>
+                        </div>
+
+
+
+                    </form>
+        </fieldset>
+    </main>
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/97f8f2a2f5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
